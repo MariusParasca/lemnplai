@@ -1,46 +1,66 @@
+/* General */
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+/* Contact Data */
+
 ul.contactData {
-   background-color: #B0BB3A;
-  padding-top: 10px;
-  height: 40px;
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
+	background-color: #b0bb3a;
+	padding-top: 13px;
+	height: 50px;
+	box-sizing: border-box;
+	list-style-type: none;
+	margin: 0;
+	font-size: 17px;
 }
 
 ul.contactData li {
-  color: #FFF;
-  display: inline-block;
+	color: #fff;
+	display: inline-block;
 }
 
 ul.contactData li:last-child {
-  margin-left: 30px;
+	margin-left: 25px;
 }
 
 ul.contactData li span {
-  display: inline-block;
-  position: relative;
-  top: -3px;
-  margin-left: 10px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	margin-left: 10px;
 }
 
-
-.white {
-  color: white;
+@media only screen and (max-width: 350px) {
+	ul.contactData {
+		padding-top: 14px;
+		font-size: 15px;
+	}
+	ul.contactData li:last-child {
+		margin-left: 20px;
+	}
 }
 
-
-.nav {
-  box-shadow: 0 2px 2px #ccc;
-}
+/* Navigation */
 
 a.nav-link {
-  color: #2a2a2a;
+	color: #5b5b5b !important;
 }
 
 a.nav-link:hover {
-  color: #D5DB96;
+	color: #d5db96 !important;
 }
 
 a.nav-link.active {
-  color: rgb(177, 182, 121) !important;
+	color: rgb(177, 182, 121) !important;
+}
+
+/* Others */
+
+.white {
+	color: white;
 }

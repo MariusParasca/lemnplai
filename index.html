@@ -16,25 +16,33 @@
   <header>
     <ul class="contactData">
       <li>
-        <ion-icon name="call" class="white"></ion-icon><span>0740333000</span>
+        <a href="tel:1234567890"><ion-icon name="call" class="white"></ion-icon><span>1234567890</span></a>
       </li>
       <li>
-        <ion-icon name="mail" class="white"></ion-icon><span>test@test.com</span>
+        <a href="mailto:test@test.com"><ion-icon name="mail" class="white"></ion-icon><span>test@test.com</span></a>
       </li>
     </ul>
-
-    <nav>
-      <ul class="nav nav-tabs nav-fill">
-        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">Lemnplai</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-
-  <!-- <div class="row contactData">
-        
-      </div> -->
 
   <div class="container-fluid"></div>
   </div>

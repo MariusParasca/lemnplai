@@ -1,0 +1,8 @@
+.carousel-inner {
+  width: 100% !important;
+  max-height: 500px !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+}

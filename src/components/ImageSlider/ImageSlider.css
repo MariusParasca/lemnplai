@@ -12,6 +12,7 @@
   --control-bullet-active-color: #ffffff;
   --loader-bar-color: #ffffff;
   --loader-bar-height: 5px;
+  --content-background-color: #f8f9fa;
 }
 
 .aws-sld__bar {

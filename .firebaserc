@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "react-burger",
+    "test": "react-my-burger-f9f71"
+  }
+}

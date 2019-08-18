@@ -1,8 +1,40 @@
-.carousel-inner {
-  width: 100% !important;
-  max-height: 500px !important;
+.aws-sld {
+  --slider-height-percentage: 500px;
+  --slider-transition-duration: 200ms;
+  --organic-arrow-thickness: 5px;
+  --organic-arrow-border-radius: 0px;
+  --organic-arrow-height: 37px;
+  --organic-arrow-color: #ffffff;
+  --control-button-width: 10%;
+  --control-button-height: 25%;
+  --control-button-background: transparent;
+  --control-bullet-color: #ffffff;
+  --control-bullet-active-color: #ffffff;
+  --loader-bar-color: #ffffff;
+  --loader-bar-height: 5px;
 }
 
-.nopadding {
-  padding: 0 !important;
+.aws-sld__bar {
+  opacity: 0.5;
+}
+
+.aws-sld__bullets {
+  bottom: 25px;
+  z-index: 1000;
+}
+
+.aws-sld__bullets button {
+  opacity: 0.6;
+  width: 12px;
+  height: 12px;
+}
+
+.aws-sld__bullets .aws-sld__bullets--active {
+  opacity: 0.85;
+}
+
+@media (max-width: 520px) {
+  .aws-sld {
+    --slider-height-percentage: 80%;
+  }
 }

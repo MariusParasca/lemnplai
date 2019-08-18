@@ -1,17 +1,24 @@
 import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
+
 import './App.css';
-import ContactDataBanner from './components/ContactDataBanner/ContactDataBanner';
-import NavigationBar from './components/NavigationBar/NavigationBar';
-import ImageSlider from './components/ImageSlider/ImageSlider';
-import TextBanner from './components/TextBanner/TextBanner';
+import Header from './components/Header/Header';
+import Home from './pages/Home';
+import Services from './pages/Services';
 
 function App() {
+  const routes = (
+    <Switch>
+      <Route path="/services" component={Services} />
+      <Route path="/" exact component={Home} />
+      <Redirect to="/" />
+    </Switch>
+  );
+
   return (
     <div className="App">
-      <ContactDataBanner />
-      <NavigationBar />
-      <ImageSlider />
-      <TextBanner />
+      <Header />
+      {routes}
     </div>
   );
 }

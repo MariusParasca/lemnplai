@@ -3,11 +3,11 @@ import React from 'react';
 import ContactDataBanner from './ContactDataBanner/ContactDataBanner';
 import NavigationBar from './NavigationBootstrapBar/NavigationBar';
 
-const header = () => {
+const header = props => {
   return (
     <header>
       <ContactDataBanner />
-      <NavigationBar />
+      <NavigationBar {...props} />
     </header>
   );
 };

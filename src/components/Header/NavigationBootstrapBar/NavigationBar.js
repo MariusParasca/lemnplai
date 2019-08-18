@@ -1,11 +1,12 @@
 import React from 'react';
 import NavigationBoostrapItem from './NavigationBoostrapItem/NavigationBoostrapItem';
 
-const navigationBar = () => {
+const navigationBar = props => {
+  const { title } = props;
   return (
     <nav className="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-ligh shadow">
       <a className="navbar-brand" href="/">
-        Lemnplai
+        {title}
       </a>
       <button
         className="navbar-toggler"

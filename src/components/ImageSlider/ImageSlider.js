@@ -3,7 +3,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
 import './ImageSlider.css';
-import Spinner from '../UI/Spinner/Spinner';
 
 // @ts-ignore
 const imageSlides = require.context(

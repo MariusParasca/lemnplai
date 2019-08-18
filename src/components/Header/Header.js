@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ContactDataBanner from './ContactDataBanner/ContactDataBanner';
-import NavigationBar from './NavigationBar/NavigationBar';
+import NavigationBar from './NavigationBootstrapBar/NavigationBar';
 
 const header = () => {
   return (

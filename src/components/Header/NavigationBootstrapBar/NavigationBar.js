@@ -1,9 +1,9 @@
 import React from 'react';
-import './NavigationBar.css';
+import NavigationBoostrapItem from './NavigationBoostrapItem/NavigationBoostrapItem';
 
 const navigationBar = () => {
   return (
-    <nav className="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light">
+    <nav className="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-ligh shadow">
       <a className="navbar-brand" href="/">
         Lemnplai
       </a>
@@ -20,21 +20,15 @@ const navigationBar = () => {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link active" href="/">
-              Home <span className="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">
-              About us
-            </a>
-          </li>
+          <NavigationBoostrapItem to="/" exact>
+            Home
+          </NavigationBoostrapItem>
+          <NavigationBoostrapItem to="/services">
+            Services
+          </NavigationBoostrapItem>
+          <NavigationBoostrapItem to="/aboutus">
+            About us
+          </NavigationBoostrapItem>
         </ul>
       </div>
     </nav>

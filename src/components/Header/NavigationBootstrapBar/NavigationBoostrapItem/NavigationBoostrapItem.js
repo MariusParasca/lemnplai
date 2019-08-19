@@ -4,20 +4,16 @@ import { NavLink } from 'react-router-dom';
 import './NavigationBoostrapItem.css';
 
 const navigationBoostrapItem = props => {
-  const { to, current, exact, children } = props;
-  const liClasses = current ? 'nav-item' : 'nav-item active';
-
+  const { to, exact, children } = props;
   return (
-    <li className={liClasses}>
-      <NavLink
-        to={to}
-        exact={exact}
-        activeClassName="active"
-        className="nav-link"
-      >
-        {children}
-      </NavLink>
-    </li>
+    <NavLink
+      to={to}
+      exact={exact}
+      activeClassName="active"
+      className="nav-link"
+    >
+      {children}
+    </NavLink>
   );
 };
 

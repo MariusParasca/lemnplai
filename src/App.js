@@ -9,7 +9,7 @@ import Services from './pages/Services';
 function App() {
   const routes = (
     <Switch>
-      <Route path="/services" component={Services} />
+      <Route path="/products" component={Services} />
       <Route path="/" exact component={Home} />
       <Redirect to="/" />
     </Switch>

@@ -6,12 +6,12 @@ import './ImageSlider.css';
 
 // @ts-ignore
 const imageSlides = require.context(
-  '../../../public/assets/images/slides/',
+  '../../../../public/assets/images/slides',
   false,
   /^.*\.jpg$/
 );
 const BASE_IMAGE_NAME = 'slide';
-const IMAGE_EXTENSION = 'jpg';
+const IMAGE_EXTENSION = "jpg";
 const NUMBER_OF_SLIDES = 3;
 
 class ImageSlider extends Component {

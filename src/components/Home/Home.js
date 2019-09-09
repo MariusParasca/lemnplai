@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ImageSlider from '../components/ImageSlider/ImageSlider';
-import TextBanner from '../components/TextBanner/TextBanner';
+import ImageSlider from './ImageSlider/ImageSlider';
+import TextBanner from '../common/TextBanner/TextBanner';
 
 const home = () => {
   return (

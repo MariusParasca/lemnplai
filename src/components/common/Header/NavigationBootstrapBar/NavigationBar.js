@@ -22,21 +22,6 @@ const navigationBar = props => {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    // <nav className="navbar navbar-expand-xl navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-ligh shadow">
-    //   <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    //     <ul className="navbar-nav mr-auto">
-    //       <NavigationBoostrapItem to="/" exact>
-    //         Home
-    //       </NavigationBoostrapItem>
-    //       <NavigationBoostrapItem to="/products">
-    //         Products
-    //       </NavigationBoostrapItem>
-    //       <NavigationBoostrapItem to="/aboutus">
-    //         About us
-    //       </NavigationBoostrapItem>
-    //     </ul>
-    //   </div>
-    // </nav>
   );
 };
 

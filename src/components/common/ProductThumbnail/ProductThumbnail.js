@@ -4,14 +4,13 @@ import Image from 'react-bootstrap/Image'
 import classes from './ProductThumbnail.module.css';
 
 const ProductThumbnail = (props) => {
-  const { src }  = props;
+  const { src,  title, description }  = props;
   return (
     <div className={classes.Wrapper}>
       <Image className={classes.Image} src={`${src}`} thumbnail></Image>
       <div className="caption">
-          <h3>Hamburger</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.</p>
+          <h3>{title}</h3>
+          <p className={classes.Description}>{description}</p>
       </div>
     </div>
   );

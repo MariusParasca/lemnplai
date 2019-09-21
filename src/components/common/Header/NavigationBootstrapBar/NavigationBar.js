@@ -17,9 +17,9 @@ const NavigationBar = props => {
           <NavigationBoostrapItem to="/products">
             Products
           </NavigationBoostrapItem>
-          <NavigationBoostrapItem to="/aboutus">
+          {/* <NavigationBoostrapItem to="/aboutus">
             About us
-          </NavigationBoostrapItem>
+          </NavigationBoostrapItem> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

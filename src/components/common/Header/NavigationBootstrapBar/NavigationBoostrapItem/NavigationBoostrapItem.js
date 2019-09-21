@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import './NavigationBoostrapItem.css';
 
-const navigationBoostrapItem = props => {
+const NavigationBoostrapItem = props => {
   const { to, exact, children } = props;
   return (
     <NavLink
@@ -11,10 +11,10 @@ const navigationBoostrapItem = props => {
       exact={exact}
       activeClassName="active"
       className="nav-link"
-    >
+    >   
       {children}
     </NavLink>
   );
 };
 
-export default navigationBoostrapItem;
+export default NavigationBoostrapItem;

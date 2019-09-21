@@ -3,13 +3,13 @@ import React from 'react';
 import ContactDataBanner from './ContactDataBanner/ContactDataBanner';
 import NavigationBar from './NavigationBootstrapBar/NavigationBar';
 
-const header = props => {
+const Header = props => {
   return (
     <header>
-      <ContactDataBanner />
+      <ContactDataBanner tell={'0740777941'} mail={'lemnplai@yahoo.com'} />
       <NavigationBar {...props} />
     </header>
   );
 };
 
-export default header;
+export default Header;

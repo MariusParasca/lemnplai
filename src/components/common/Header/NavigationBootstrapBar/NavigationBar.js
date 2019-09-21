@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React from 'react';
 import NavigationBoostrapItem from './NavigationBoostrapItem/NavigationBoostrapItem';
 import { Navbar, Nav } from 'react-bootstrap';
 
-const navigationBar = props => {
+const NavigationBar = props => {
   const { title } = props;
   return (
     <Navbar className="shadow" expand="sm" bg="light" variant="light">
@@ -25,4 +26,4 @@ const navigationBar = props => {
   );
 };
 
-export default navigationBar;
+export default NavigationBar;

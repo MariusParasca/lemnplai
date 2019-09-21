@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImageResponsive from '../common/ImageResponsive/ImageResponsive';
-import ReactImageZoom from 'react-image-zoom';
+import ProductThumbnail from '../common/ProductThumbnail/ProductThumbnail';
 
 // @ts-ignore
 const imagesProducts = require.context(
@@ -14,17 +13,13 @@ const products = () => {
   return (
     <Container className='mt-5'>
       <Row>
-        <Col style={{ border: '1px solid black' }}>
-          <ImageResponsive 
-            src={imagesProducts('./product1.jpg')}
-            width={250}
-            height={250}
-          />
+        <Col lg={3} md={2}>
+          <ProductThumbnail  src={imagesProducts('./product1.jpg')}/>
         </Col>
-        <Col style={{ border: '1px solid black' }}>
+        <Col>
 
         </Col>
-        <Col style={{ border: '1px solid black' }}>3 of 3</Col>
+        <Col >3 of 3</Col>
       </Row>
     </Container>
   );

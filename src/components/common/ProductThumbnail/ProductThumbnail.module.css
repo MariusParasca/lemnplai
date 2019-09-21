@@ -1,0 +1,12 @@
+.ImageResponsive {
+  position: relative;
+  max-width: 100%;
+}
+
+.Image {
+  height: 400px;
+}
+
+.Wrapper {
+  border: 1px solid black;
+}

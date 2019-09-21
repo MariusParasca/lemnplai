@@ -3,23 +3,24 @@ import React from 'react';
 
 import classes from './ContactDataBanner.module.css';
 
-const contactDataBanner = () => {
+const ContactDataBanner = (props) => {
+  const { tell, mail} = props;
   return (
     <ul className={classes.ContactDataBanner}>
       <li>
-        <a href="tel:1234567890">
+        <a href={`tel:${tell}`}>
           <ion-icon name="call" class="white" />
-          <span>0740777941</span>
+          <span>{tell}</span>
         </a>
       </li>
       <li>
-        <a href="mailto:test@test.com">
+        <a href={`mailto:${mail}`}>
           <ion-icon name="mail" class="white" />
-          <span>lemnplai@yahoo.com</span>
+          <span>{mail}</span>
         </a>
       </li>
     </ul>
   );
 };
 
-export default contactDataBanner;
+export default ContactDataBanner;

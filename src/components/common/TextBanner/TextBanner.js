@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './TextBanner.module.css';
 
-const textBanner = () => {
+const TextBanner = () => {
   const textToShow = `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Repellendus ab nulla dolorum autem nisi officiis blanditiis
             voluptatem`;
@@ -17,4 +17,4 @@ const textBanner = () => {
   );
 };
 
-export default textBanner;
+export default TextBanner;

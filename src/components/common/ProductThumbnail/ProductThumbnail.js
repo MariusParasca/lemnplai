@@ -11,11 +11,11 @@ const ProductThumbnail = (props) => {
     <div className={classes.Wrapper}>
       {loading ? <Spinner/> : null}
       <img 
-      style={{display: !loading ? 'block' : 'none'}}
-      className={`${classes.Image} img-thumbnail`}
-      src={`${src}`}
-      onLoad={() => setLoading(false)}
-      alt={title}
+        style={{display: !loading ? 'block' : 'none'}}
+        className={`${classes.Image} img-thumbnail`}
+        src={`${src}`}
+        onLoad={() => setLoading(false)}
+        alt={title}
       />
       <div className="caption">
           <h3>{title}</h3>

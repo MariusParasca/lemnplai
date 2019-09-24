@@ -12,12 +12,14 @@ const imagesProducts = require.context(
 const BASE_IMAGE_NAME = 'product';
 const IMAGE_EXTENSION = "jpg";
 
- const getProducts = (numberOfItems) => {
+const products = () => {
+
+  const getProducts = (numberOfItems) => {
     const productsCols = [];
     for (let i = 1; i <= numberOfItems; i++) {
       const imageName = `./${BASE_IMAGE_NAME}${i}.${IMAGE_EXTENSION}`;
       productsCols.push(
-      <Col lg={4} md={6} sm={12} xs={12}  key={imageName} >
+        <Col lg={4} md={6} sm={12} xs={12}  key={imageName} >
           <ProductThumbnail  
             src={imagesProducts(imageName)}
             title={`Product ${i}`}
@@ -29,12 +31,10 @@ const IMAGE_EXTENSION = "jpg";
     return productsCols;
  }
 
-
-const products = () => {
   return (
     <Container className='mt-5'>
       <Row>
-        { getProducts(3)}
+        {getProducts(3)}
       </Row>
     </Container>
   );

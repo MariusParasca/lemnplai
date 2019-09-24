@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 
@@ -24,7 +24,10 @@ const getCarouselImageTags = () => {
   return imageTags;
 };
 
-const ImageSlider = () => {
+const ImageSlider = (props) => {
+
+  useEffect(() => props.setLoading(false), [props]);
+
   return (
     <AwesomeSlider className=".aws-btn" infinite={true}>
       {getCarouselImageTags()}

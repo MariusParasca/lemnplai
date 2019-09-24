@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import ImageSlider from './ImageSlider/ImageSlider';
 import TextBanner from '../common/TextBanner/TextBanner';
+import Spinner from '../UI/Spinner/Spinner';
 
-const home = () => {
+const Home = () => {
+
+  const [ isImageSliderLoading, setIsImageSliderLoading ] = useState(true);
+
   return (
     <React.Fragment>
-      <ImageSlider />
+      {isImageSliderLoading ? <Spinner /> : null}
+      <ImageSlider setLoading={setIsImageSliderLoading} />
       <TextBanner />
     </React.Fragment>
   );
 };
 
-export default home;
+export default Home;

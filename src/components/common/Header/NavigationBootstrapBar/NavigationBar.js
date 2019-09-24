@@ -7,7 +7,7 @@ const NavigationBar = props => {
   const { title } = props;
   return (
     <Navbar className="shadow" expand="sm" bg="light" variant="light">
-      <Navbar.Brand href="#home">{title}</Navbar.Brand>
+      <Navbar.Brand href="/">{title}</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">

@@ -11,7 +11,7 @@ const ProductThumbnail = (props) => {
   return (
     <div className={classes.Wrapper}>
       {loading ? <Spinner/> : null}
-      <LazyLoad>
+      <LazyLoad offsetVertical={150} debounce={false}>
         <img 
           style={{display: !loading ? 'block' : 'none'}}
           className={`${classes.Image} img-thumbnail`}

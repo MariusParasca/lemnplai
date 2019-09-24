@@ -18,8 +18,8 @@ const ProductThumbnail = (props) => {
         alt={title}
       />
       <div className="caption">
-          <h3>{title}</h3>
-          <p className={classes.Description}>{description}</p>
+        <h3>{title}</h3>
+        <p className={classes.Description}>{description}</p>
       </div>
     </div>
   );

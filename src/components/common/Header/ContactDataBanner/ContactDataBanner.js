@@ -1,10 +1,9 @@
-// @ts-nocheck
 import React from 'react';
 
 import classes from './ContactDataBanner.module.css';
 
-const ContactDataBanner = (props) => {
-  const { tell, mail} = props;
+const ContactDataBanner = props => {
+  const { tell, mail } = props;
   return (
     <ul className={classes.ContactDataBanner}>
       <li>

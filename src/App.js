@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import './App.css';
-import Header from './/components/common/Header/Header';
+import Header from './components/common/Header/Header';
 import Home from './components/Home/Home';
 import Products from './components/Products/Products';
 

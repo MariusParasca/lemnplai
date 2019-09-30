@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react';
-import NavigationBoostrapItem from './NavigationBoostrapItem/NavigationBoostrapItem';
 import { Navbar, Nav } from 'react-bootstrap';
+import NavigationBoostrapItem from './NavigationBoostrapItem/NavigationBoostrapItem';
 
 const NavigationBar = props => {
   const { title } = props;
@@ -14,9 +14,7 @@ const NavigationBar = props => {
           <NavigationBoostrapItem to="/" exact>
             Home
           </NavigationBoostrapItem>
-          <NavigationBoostrapItem to="/products">
-            Products
-          </NavigationBoostrapItem>
+          <NavigationBoostrapItem to="/products">Products</NavigationBoostrapItem>
           {/* <NavigationBoostrapItem to="/aboutus">
             About us
           </NavigationBoostrapItem> */}

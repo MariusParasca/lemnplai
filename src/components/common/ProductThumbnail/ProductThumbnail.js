@@ -1,19 +1,19 @@
-import React, { useState } from 'react' 
+import React, { useState } from 'react';
 import LazyLoad from 'react-lazy-load';
 
 import classes from './ProductThumbnail.module.css';
 import Spinner from '../../UI/Spinner/Spinner';
 
-const ProductThumbnail = (props) => {
-  const { src,  title, description }  = props;
-  const [ loading, setLoading ] = useState(true);
+const ProductThumbnail = props => {
+  const { src, title, description } = props;
+  const [loading, setLoading] = useState(true);
 
   return (
     <div className={classes.Wrapper}>
-      {loading ? <Spinner/> : null}
+      {loading ? <Spinner /> : null}
       <LazyLoad offsetVertical={150} debounce={false}>
-        <img 
-          style={{display: !loading ? 'block' : 'none'}}
+        <img
+          style={{ display: !loading ? 'block' : 'none' }}
           className={`${classes.Image} img-thumbnail`}
           src={`${src}`}
           onLoad={() => setLoading(false)}
@@ -26,6 +26,6 @@ const ProductThumbnail = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default ProductThumbnail;

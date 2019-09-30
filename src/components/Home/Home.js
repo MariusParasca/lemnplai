@@ -5,15 +5,14 @@ import TextBanner from '../common/TextBanner/TextBanner';
 import Spinner from '../UI/Spinner/Spinner';
 
 const Home = () => {
-
-  const [ isImageSliderLoading, setIsImageSliderLoading ] = useState(true);
+  const [isImageSliderLoading, setIsImageSliderLoading] = useState(true);
 
   return (
-    <React.Fragment>
+    <>
       {isImageSliderLoading ? <Spinner /> : null}
       <ImageSlider setLoading={setIsImageSliderLoading} />
       <TextBanner />
-    </React.Fragment>
+    </>
   );
 };
 
